@@ -26,12 +26,13 @@ public class MainPet {
     }
 
     public static void deletePet(String petId){
+        PetDataRepository petDataRepository = new PetDataRepository();
         //Antes de eliminar
-        GetPetsUseCase petsUseCase = new GetPetsUseCase(new PetDataRepository());
+        GetPetsUseCase petsUseCase = new GetPetsUseCase(petDataRepository);
         ArrayList<Pet> petsBeforeDelete = petsUseCase.execute();
 
         //Elimino
-        //DeletePetUseCase deletePetUseCase = new DeletePetUseCase();
+        //DeletePetUseCase deletePetUseCase = new DeletePetUseCase(petDataRepository);
         //deletePetUseCase.execute(petId);
 
         //Después de eliminar
