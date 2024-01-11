@@ -26,9 +26,15 @@ public class MainPet {
     }
 
     public static void deletePet(String petId){
-        printPets();
+        //Antes de eliminar
+        GetPetsUseCase petsUseCase = new GetPetsUseCase(new PetDataRepository());
+        ArrayList<Pet> petsBeforeDelete = petsUseCase.execute();
+
+        //Elimino
         //DeletePetUseCase deletePetUseCase = new DeletePetUseCase();
         //deletePetUseCase.execute(petId);
-        printPets();
+
+        //Después de eliminar
+        ArrayList<Pet> petsAfterDelete = petsUseCase.execute();
     }
 }
