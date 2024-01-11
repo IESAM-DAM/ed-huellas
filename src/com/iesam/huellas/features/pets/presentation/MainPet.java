@@ -38,4 +38,19 @@ public class MainPet {
         //Después de eliminar
         ArrayList<Pet> petsAfterDelete = petsUseCase.execute();
     }
+
+    /**
+     * Por qué no funciona este método???
+     * @param petId
+     */
+    public static void deletePetNotWorking(String petId){
+        printPets();
+
+        //Elimino
+        //DeletePetUseCase deletePetUseCase = new DeletePetUseCase(petDataRepository);
+        //deletePetUseCase.execute(petId);
+
+        //Después de eliminar
+        printPets();
+    }
 }
