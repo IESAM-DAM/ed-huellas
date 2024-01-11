@@ -10,7 +10,6 @@ public class GetPetsUseCase  {
         this.petRepository = petRepository;
     }
 
-
     public ArrayList<Pet> execute(){
         return petRepository.obtainPets();
     }

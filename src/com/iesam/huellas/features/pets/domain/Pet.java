@@ -7,16 +7,19 @@ public class Pet {
     private String sex;
     private String dateBorn;
     private String urlImage;
+    private String size;
+    private String breeds;
 
-    public Pet(String id, String name, String description, String sex, String dateBorn, String urlImage) {
+    public Pet(String id, String name, String description, String sex, String dateBorn, String urlImage, String size, String breeds) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.sex = sex;
         this.dateBorn = dateBorn;
         this.urlImage = urlImage;
+        this.size = size;
+        this.breeds = breeds;
     }
-
 
     public String getId() {
         return id;
@@ -64,5 +67,21 @@ public class Pet {
 
     public void setUrlImage(String urlImage) {
         this.urlImage = urlImage;
+    }
+
+    public String getSize() {
+        return size;
+    }
+
+    public void setSize(String size) {
+        this.size = size;
+    }
+
+    public String getBreeds() {
+        return breeds;
+    }
+
+    public void setBreeds(String breeds) {
+        this.breeds = breeds;
     }
 }

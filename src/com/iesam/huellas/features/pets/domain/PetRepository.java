@@ -5,6 +5,5 @@ import java.util.List;
 
 public interface PetRepository {
     ArrayList<Pet> obtainPets();
-
-    void deletePets();
+    Pet obtainPet(String petId);
 }
