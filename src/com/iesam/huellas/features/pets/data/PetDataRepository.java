@@ -45,11 +45,8 @@ public class PetDataRepository implements PetRepository {
 
     @Override
     public void updatePet(Pet pet) {
-        for(int i=0; i < localPets.size(); i++){
-            if (localPets.get(i).getId().equals(pet.getId())){
-                localPets.add(i, pet);
-            }
-        }
+        deletePet(pet.getId());
+        savePet(pet);
     }
 
     private void initData() {

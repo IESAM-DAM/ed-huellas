@@ -8,7 +8,7 @@ public class Main {
         //MainPet.printPets();
         //MainPet.printPet("2");
         Pet newPet = new Pet(
-                "1",
+                "3",
                 "Dino",
                 "Perro muy amigable",
                 "Macho",
