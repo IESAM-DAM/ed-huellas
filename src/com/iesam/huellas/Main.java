@@ -18,7 +18,16 @@ public class Main {
                 "Mixto");
         MainPet.createPet(newPet);
 
-        newPet.setName("Dino II");
-        MainPet.updatePet(newPet);
+        Pet petToUpdated = new Pet(
+                "3",
+                "Dino II",
+                "Perro simpatico",
+                "Macho",
+                "01-01-2023",
+                "https://dino.png",
+                "Mediano",
+                "Mixto");
+
+        MainPet.updatePet(petToUpdated);
     }
 }
